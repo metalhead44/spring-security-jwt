@@ -42,6 +42,8 @@
     <artifactId>jjwt</artifactId>
     <version>0.9.1</version>
 </dependency>
+<!-- Added below dependency as Java 11 has removed these from JRE. JSONWebtoken relies on these some of these classes
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter-->
 <dependency>
   <groupId>javax.xml.bind</groupId>
   <artifactId>jaxb-api</artifactId>
